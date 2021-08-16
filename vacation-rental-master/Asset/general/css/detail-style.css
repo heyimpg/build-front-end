@@ -9,6 +9,12 @@
   margin: auto;
 }
 
+.fieldSlides img
+{
+  max-height: 450px;
+}
+
+
 /* Next & previous buttons */
 .slideshow-container__prev, .slideshow-container__next {
   cursor: pointer;
@@ -127,7 +133,7 @@ p.title
 
 .boxUpRight__title--vote
 {
-  margin-left: 50%;
+  margin-left: 30%;
   display: flex;
 }
 
