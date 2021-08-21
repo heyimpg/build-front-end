@@ -205,6 +205,54 @@
               </p>
             </div>
           </section>
+
+          <hr/>
+
+          <section>
+            <div class="feedback">
+              <h4>Hãy để lại nhận xét của bạn!</h4>
+              <form>
+                <div class="feedback__rate">
+                  <p class="feedback__title">Chất lượng: </p>
+                  <div class="rating">
+                    <input id="demo-1" type="radio" name="demo" value="1"> 
+                    <label for="demo-1">1 star</label>
+                    <input id="demo-2" type="radio" name="demo" value="2">
+                    <label for="demo-2">2 stars</label>
+                    <input id="demo-3" type="radio" name="demo" value="3">
+                    <label for="demo-3">3 stars</label>
+                    <input id="demo-4" type="radio" name="demo" value="4">
+                    <label for="demo-4">4 stars</label>
+                    <input id="demo-5" type="radio" name="demo" value="5">
+                    <label for="demo-5">5 stars</label>
+                    
+                    <div class="stars">
+                        <label for="demo-1" aria-label="1 star" title="1 star"></label>
+                        <label for="demo-2" aria-label="2 stars" title="2 stars"></label>
+                        <label for="demo-3" aria-label="3 stars" title="3 stars"></label>
+                        <label for="demo-4" aria-label="4 stars" title="4 stars"></label>
+                        <label for="demo-5" aria-label="5 stars" title="5 stars"></label>   
+                    </div>
+                  </div>
+                </div>
+                <div class="feedback__comment">
+                  <p class="feedback__title">Nhận xét: </p>
+                  <textarea id="feedback__comment" name="" id="" rows="4"></textarea>
+                </div>
+                <div>
+                  <input type="submit" class="btn btn-primary" name="" id="feedback__submit" value="Gửi">
+                </div>
+
+                  
+                
+                    
+               
+            </form>
+
+              
+              
+            </div>
+          </section>
         </div>
     
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 mainContent-Right">
@@ -407,9 +455,18 @@
   <script src="../Asset/general/js/google-map.js"></script>
   <script src="../Asset/general/js/main.js"></script>
 
+  <!-- Custom -->
   <script src="../Asset/general/js/detail.js"></script>
 
-
+  <script>
+    (function(){
+        var rating = document.querySelector('.rating');
+        var handle = document.getElementById('toggle-rating');
+        handle.onchange = function(event) {
+            rating.classList.toggle('rating', handle.checked);
+        };
+    }());
+</script>
     
   </body>
 </html>
