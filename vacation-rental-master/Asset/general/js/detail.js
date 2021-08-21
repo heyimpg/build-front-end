@@ -25,7 +25,12 @@ function showSlides(n) {
 
 
 // Vote star
-function updateRateValue(val) {
-  document.getElementById('feedback__rate--value').innerHTML = val; 
-}
+
+(function(){
+  var rating = document.querySelector('.rating');
+  var handle = document.getElementById('toggle-rating');
+  handle.onchange = function(event) {
+      rating.classList.toggle('rating', handle.checked);
+  };
+}());
 
