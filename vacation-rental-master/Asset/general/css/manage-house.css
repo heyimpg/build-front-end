@@ -1,0 +1,87 @@
+/*Header*/
+.row
+{
+    margin: 0 2%;
+}
+
+.header
+{
+    margin: 20px 5%;
+}
+
+.header .title_page
+{
+    width: 40%;
+}
+
+.header .searchBar
+{
+    width: 60%;
+    text-align: right;
+}
+
+.searchBar input
+{
+    line-height: 2.2;
+    margin-right: 15px;
+}
+
+/* Main */
+    /* Main Left*/
+ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.main__left ul li
+{
+    border: 1px solid rgba(158, 158, 158, 0.5);
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.main__left ul li
+{
+    color: black;
+}
+
+.main__left ul li.active
+{
+    background-color: #fd7792;
+    color: white;
+}
+
+.center
+{
+    text-align: center;
+}
+    /* Main Right*/ 
+.table
+{
+    text-align: center;
+    border: 1px solid rgba(158, 158, 158, 0.5);
+    border-radius: 5%;
+    margin-top: 15px;
+}
+
+.table thead
+{
+    background-color: #fd7792;
+    color: #fff;
+}
+
+.table thead a
+{
+    color: #fff;
+}
+
+
+.table tbody tr:hover
+{
+    background-color: rgba(253, 119, 146, 0.5);
+    color: #fff;
+}
